@@ -33,3 +33,11 @@ git branch
 
 // to change branch / to create new branch and use that branch
 git checkout branchName
+
+// go to github 
+// create your account
+// create new repo
+// run this three line of code
+    git remote add origin https://github.com/Amansingh-91/FSDApril2023.git
+    git branch -M main
+    git push -u origin main
