@@ -16,5 +16,11 @@ git status
 // to add file to staging area
 git add filename
 
+// to add multiple files to staging area
+git add -A
+
 // to make version
 git commit -m "message"
+
+// to see diff
+git diff 
