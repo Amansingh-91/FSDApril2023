@@ -24,3 +24,12 @@ git commit -m "message"
 
 // to see diff
 git diff 
+
+// to create branch
+git branch branchName
+
+// to see which branch currently you are working on
+git branch
+
+// to change branch / to create new branch and use that branch
+git checkout branchName
