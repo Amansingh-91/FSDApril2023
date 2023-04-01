@@ -1,0 +1,17 @@
+// Setup config
+
+//username
+git config --global user.name "Aman Saini"
+
+// email
+git config --global user.email "aman.singh756888@gamil.com"
+
+// Setup
+// to initialize git 
+git init
+
+// to check the status of the files in git repo
+git status
+
+// to add file to staging area
+git add filename
