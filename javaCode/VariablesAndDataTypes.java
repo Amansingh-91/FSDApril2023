@@ -22,7 +22,7 @@ class VariablesAndDataTypes {
         long x = age;
 
         // narrowing /explicit => mannual
-        byte b = (byte) age;
+        byte b = (byte) age;// -128 to 127
 
         System.out.println(b);
 
