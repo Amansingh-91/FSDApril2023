@@ -23,7 +23,7 @@ public class VendingMachine {
             switch (amount) {
                 case 10:
                     System.out.println("Please pick your chips");
-                    break;// jump statement
+                    // jump statement
                 case 15:
                     System.out.println("Please pick your chocolate");
                     break;
