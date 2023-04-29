@@ -14,14 +14,24 @@ public class FunctionDemo {
         System.out.println("hi "+ name);
     }
 
+    public void payment(int amount){
+        
+        System.out.printf("utility bill paid for amount %d successfully",amount);
+    }
+
     public static void main(String[] args) {
-        // Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         // System.out.println("Enter the name of the person you wish to greet");
         // String name =  sc.nextLine();
         // object creation
         // class_name obj_name =  new class_Name();
         FunctionDemo obj = new FunctionDemo();
         obj.greet();
+        System.out.println("enter the amount to be paid");
+        int amount = sc.nextInt();
+        sc.nextLine();
+        obj.payment(amount);
+        
     }
 }
 
@@ -35,5 +45,9 @@ class Example{
         FunctionDemo obj = new FunctionDemo();
         obj.greet();
         obj.greetWithName(name);
+
+        obj.payment(1000);
+
+        
     }
 }
