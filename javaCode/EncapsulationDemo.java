@@ -21,9 +21,9 @@ class Customer{
     public int getAmount(){
         return this.amount;
     }
-    public void changeAmount(int amount){
-        this.amount = amount;
-    }
+    // public void changeAmount(int amount){
+    //     this.amount = amount;
+    // }
     public Customer(String name, int amount, String accountNumber) {
         this.name = name;
         this.amount = amount;

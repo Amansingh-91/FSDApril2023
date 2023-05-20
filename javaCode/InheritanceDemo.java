@@ -1,7 +1,8 @@
 package javaCode;
+import java.util.ArrayList;
 
 public class InheritanceDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) {     
         Dog tom =  new Dog();
         tom.age = 10;
         tom.color = "black";
@@ -11,7 +12,7 @@ public class InheritanceDemo {
         tom.eat();
         tom.sleep();
         tom.provideColler(new DogColler("Tom","Aman Saini 123545678"));
-        System.out.println(tom.d);
+        System.out.println(tom.d);        
     }
 }
 // constructor chainning :
@@ -24,9 +25,9 @@ class Animal{
     // private int p ;
 
     // functionality
-    // public Animal(){
-
-    // }
+    public Animal(){
+        this.color = "red";
+    }
 
     public Animal(String color, int age, String species) {
         this.color = color;
@@ -41,6 +42,7 @@ class Animal{
     public void sleep(){
         System.out.println("sleeping");
     }
+    
 
 }
 
@@ -62,8 +64,8 @@ class Dog extends Animal{
     }
     public void provideColler(DogColler d){
         this.d = d;
-
-    }
+        
+    } 
 }
 
 // DogColler IS A Dog 
