@@ -47,6 +47,20 @@ public class GraphWithHashMap {
         System.out.println();
 
     }
+    public void dfs(String root){
+        HashSet<String> visited = new HashSet<>();
+        dfsRec(root, visited);
+        System.out.println();
+    }
+    public void dfsRec(String root,HashSet<String> visited){
+        visited.add(root);
+        System.out.print(root +" ");
+        for (String adjVetrex : listOfVertex.get(root)) {
+            if(!visited.contains(adjVetrex)){
+                dfsRec(adjVetrex, visited);
+            }
+        }
+    }
     public static void main(String[] args) {
         GraphWithHashMap g = new GraphWithHashMap();
         g.addVertex("a");
@@ -61,6 +75,7 @@ public class GraphWithHashMap {
         g.insertEdge("a", "b");
         g.insertEdge("z", "e");
         g.BFS("d");
+        g.dfs("b");
         
 
     }

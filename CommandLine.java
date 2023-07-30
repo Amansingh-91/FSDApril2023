@@ -27,7 +27,12 @@ public class CommandLine {
  
         // Reading data using readLine
         String name2 = reader.readLine();
-
+        String allInput[] = name2.split(" ");
+        int convertedInput[] = new int[allInput.length];
+        for (int i = 0;i < allInput.length;i++) {
+            System.out.println(allInput[i]+" seprated");
+            convertedInput[i] = Integer.parseInt(allInput[i]);
+        }
         System.out.println("input cpmplete");
  
         // Printing the read line
